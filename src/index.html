@@ -1,13 +1,45 @@
 <!DOCTYPE html>
- <html lang="en">
-   <head>
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <title>Easiest that you think</title>
-
-   </head>
-   <body>
-<h1>You guys are so cool</h1>
-
-   </body>
- </html>
+<html lang="en">
+<head>
+	<script src="#"></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Sergio's busy day</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+	<form class="form" id="form">
+	<fieldset class="container">
+		<h5 class="title">Today's To Dos
+			<span>
+				<i class="fa fa-refresh"></i>
+			</span>
+		</h5>
+		<label for="add"></label><input type="text" id="add" class="add txt-position" placeholder="Add to your list..." />
+		<ul class="todos" id="todos">
+			<li class="todoItem">
+				<div>
+					<input class="checker" id="item1" type="checkbox"/>
+					<label for="item1">task 1</label>
+				</div>
+				<button type="button" class="positioner">
+					<i class="fa fa-ellipsis-v"></i>
+				</button>
+			</li>
+			<li class="todoItem completed">
+				<div>
+					<input class="checker" id="item2" type="checkbox"/>
+					<label for="item2">task 2</label>
+				</div>
+				<button type="button" class="positioner">
+					<i class="fa fa-ellipsis-v"></i>
+				</button>
+			</li>
+		</ul>
+		<input type="submit" value="clear all completed" class="clear-btn  txt-position" id="clearBtn" />
+	</fieldset>
+</form>
+	<script src="index.js"></script>
+</body>
+</html>
